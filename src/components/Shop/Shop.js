@@ -6,15 +6,15 @@ import './Shop.css'
 const Shop = () => {
     const [cart, setCart] = useState([]);
     const products = [
-        { id: 1, name: 'asus pro', img: "images/lap1.jpg", price: 75000 },
-        { id: 2, name: 'hp max', img: "images/lap2.jpg", price: 70000 },
-        { id: 3, name: 'dell y3', img: "images/lap3.jpg", price: 68000 },
-        { id: 4, name: 'asus xoo', img: "images/lap4.jpg", price: 65000 },
-        { id: 5, name: 'lenovo wisten', img: "images/lap5.jpg", price: 60000 },
-        { id: 6, name: 'hp pavilion', img: "images/lap6.jpg", price: 55000 },
-        { id: 7, name: 'apple mac', img: "images/lap7.jpg", price: 50000 },
-        { id: 8, name: 'hp autt', img: "images/lap8.jpg", price: 45000 },
-        { id: 9, name: 'asus zenbook', img: "images/lap9.jpg", price: 45000 }
+        { id: 1, name: 'Asus ExpertBook', img: "images/lap1.jpg", price: 75000 },
+        { id: 2, name: 'HP Pavilion X360', img: "images/lap2.jpg", price: 70000 },
+        { id: 3, name: 'Dell Inspiron 15', img: "images/lap3.jpg", price: 68000 },
+        { id: 4, name: 'Asus X515MA', img: "images/lap4.jpg", price: 65000 },
+        { id: 5, name: 'Lenovo IdeaPad', img: "images/lap5.jpg", price: 60000 },
+        { id: 6, name: 'HP Envy X360', img: "images/lap6.jpg", price: 55000 },
+        { id: 7, name: 'Apple MacBook Pro', img: "images/lap7.jpg", price: 50000 },
+        { id: 8, name: 'Acer Nitro 7', img: "images/lap8.jpg", price: 45000 },
+        { id: 9, name: 'Asus Zenbook', img: "images/lap9.jpg", price: 45000 }
     ]
     const handleAddToCart = (product) => {
         if (!(cart.indexOf(product.name) === -1)) {
