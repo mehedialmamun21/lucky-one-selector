@@ -8,3 +8,26 @@
     grid-gap: 40px;
     margin: 30px;
 }
+.select-btn{
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #35c9c9;
+    padding: 10px;
+    margin-right:10px ;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.select-btn:hover{
+    background-color: orange;
+}
+.reset-btn{
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: yellowgreen;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.reset-btn:hover{
+    background-color: orange;
+}
