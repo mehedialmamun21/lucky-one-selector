@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css'
 
@@ -16,8 +17,19 @@ const Shop = () => {
         { id: 9, name: 'asus zenbook', img: "images/lap9.jpg", price: 45000 }
     ]
     const handleAddToCart = (product) => {
-        setCart([...cart, product.name]);
+        if (!(cart.indexOf(product.name) === -1)) {
+            window.alert('already added');
+            return
+        }
+        const newCart = [...cart, product.name];
+        setCart(newCart);
     }
+
+    const selectHandler = () => {
+        const randomCart = Math.floor(Math.random() * cart.length);
+        setCart([cart[randomCart]])
+    }
+
     return (
         <div className='shop-container'>
 
@@ -30,17 +42,10 @@ const Shop = () => {
                     ></Product>)
                 }
             </div>
-            <div className='cart-container'>
-                <h1>Selected Gazets :</h1>
-                <ul>
-                    {
-                        cart.map(p => <li>{p}</li>)
-                    }
-                </ul>
-                <button className='select-btn'>Select One</button>
-                <button className='reset-btn'>Reset</button>
-            </div>
 
+            <div className='cart-container'>
+                <Cart cart={cart} selectHandler={selectHandler}></Cart>
+            </div>
         </div>
     );
 };
