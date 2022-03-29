@@ -30,6 +30,11 @@ const Shop = () => {
         setCart([cart[randomCart]])
     }
 
+    const resetHandler = () => {
+        const cart = [];
+        setCart(cart);
+    }
+
     return (
         <div className='shop-container'>
 
@@ -44,7 +49,7 @@ const Shop = () => {
             </div>
 
             <div className='cart-container'>
-                <Cart cart={cart} selectHandler={selectHandler}></Cart>
+                <Cart cart={cart} selectHandler={selectHandler} resetHandler={resetHandler}></Cart>
             </div>
         </div>
     );
