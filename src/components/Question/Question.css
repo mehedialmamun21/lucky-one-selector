@@ -1,0 +1,10 @@
+.question {
+    height: 550px;
+    background-color: #80808044;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+.question p{
+    font-size: 20px;
+}

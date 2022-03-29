@@ -13,6 +13,7 @@
     color:#FFFFFF;
     font-size: 17px;
     margin-left: 36px;
+    font-weight: bold;
 }
 .menu a:hover{
     color: orange;

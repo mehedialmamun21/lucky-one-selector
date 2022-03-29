@@ -5,3 +5,7 @@
 .cart{
     text-align: center;
 }
+.cart h1{
+    background-color: #556b2f69;
+    padding: 10px;
+}
