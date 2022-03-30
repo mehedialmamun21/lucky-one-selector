@@ -5,7 +5,7 @@ const Cart = ({ cart, selectHandler, resetHandler }) => {
     return (
         <div className='carts'>
             <div className='cart'>
-                <h1>Selected Gadgets</h1>
+                <h2>Selected Gadgets</h2>
                 <ul>
                     {
                         cart.map(p => <li key={p}>{p}</li>)
